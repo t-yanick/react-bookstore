@@ -11,7 +11,7 @@ const initialState = {
     {
       id: 2,
       title: 'Dead Alive',
-      category: 'Action'
+      category: 'Action',
     },
   ],
 };
@@ -21,7 +21,7 @@ const booksReducer = (state = initialState, action) => {
     case CREATE_BOOK:
       return [...state, action.book];
     case REMOVE_BOOK:
-      [...state].map(s => s.id !== action.id);
+      [...state].map((s) => s.id !== action.id);
       return [...state, action.id];
     default:
       return state;
