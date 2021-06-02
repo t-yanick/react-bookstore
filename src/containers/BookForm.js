@@ -11,17 +11,18 @@ const BookForm = () => {
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
 
-  const titleHandler = e => {
+  const titleHandler = (e) => {
     setTitle(e.target.value);
   };
 
-  const categoryHandler = e => {
+  const categoryHandler = (e) => {
     setCategory(e.target.value);
   };
 
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(createBook({
+      // eslint-disable-next-line
       id: parseInt(Date.now()),
       title,
       category,
@@ -46,4 +47,3 @@ const BookForm = () => {
 };
 
 export default BookForm;
-
