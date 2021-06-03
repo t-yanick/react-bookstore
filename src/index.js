@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
@@ -23,7 +23,7 @@ const initialState = {
 const store = createStore(rootReducer, initialState);
 store.getState();
 
-ReactDom.render(
+ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
