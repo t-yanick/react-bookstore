@@ -22,7 +22,7 @@ const BookList = ({ categories }) => {
   };
 
   const bookFilter = () => {
-    if (filter !== 'all') {
+    if (filter !== 'All') {
       return books.filter((book) => book.category === filter);
     }
     return books;
