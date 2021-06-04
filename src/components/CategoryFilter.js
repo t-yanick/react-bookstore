@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CategoryFilter = ({ handleFilterChange, categories }) => (
-  <select onChange={handleFilterChange}>
+  <select onChange={handleFilterChange} className="filter-select">
     <option value="All">All</option>
     {categories.map((category) => {
       <option key={category}>{category}</option>;
