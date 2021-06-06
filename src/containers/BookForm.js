@@ -30,19 +30,22 @@ const BookForm = ({ categories }) => {
     setCategory({ value: '' });
   };
   return (
-    <form onSubmit={submitHandler}>
-      <input type="text" required onChange={titleHandler} value={title.value} />
-      <select required onChange={categoryHandler} value={category.value} className="category-select">
-        <option value="">Category</option>
-        {categories.map((category) => (
-          <option key={category}>
-            {' '}
-            {category}
-          </option>
-        ))}
-      </select>
-      <button type="submit" value="Submit"> Submit</button>
-    </form>
+    <div className="book-form">
+      <h3 className="title">ADD A NEW BOOK</h3>
+      <form onSubmit={submitHandler}>
+        <input type="text" required onChange={titleHandler} value={title.value} className="add-book" />
+        <select required onChange={categoryHandler} value={category.value} className="category-select">
+          <option value="">Category</option>
+          {categories.map((category) => (
+            <option key={category}>
+              {' '}
+              {category}
+            </option>
+          ))}
+        </select>
+        <button type="submit" className="btn"> Submit</button>
+      </form>
+    </div>
   );
 };
 
