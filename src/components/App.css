@@ -45,6 +45,10 @@ ul {
   color: black;
 }
 
+.book-actions a {
+  cursor: pointer;
+}
+
 .nav-title a:hover {
   color: darkgray;
 }
@@ -62,8 +66,6 @@ ul {
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  margin: 6px 47px 2px 0;
-  font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -125,10 +127,6 @@ tr {
   justify-content: space-around;
 }
 
-.book-actions a {
-  cursor: pointer;
-}
-
 .remove-btn {
   color: #4386bf;
   border: none;
@@ -172,7 +170,6 @@ tr {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   margin-left: 45%;
-
 }
 
 .filter {
@@ -185,7 +182,6 @@ tr {
   font-weight: bolder;
   margin-right: 1rem;
   text-align: center;
-  
 }
 
 table {
@@ -229,7 +225,6 @@ form {
   width: 25%;
   height: 1rem;
   margin: 29px 524px 19px 0;
-  font-family: Montserrat;
   font-size: 1.5rem;
   font-weight: bold;
   font-stretch: normal;
