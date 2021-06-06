@@ -25,6 +25,12 @@ ul {
   background-color: white;
 }
 
+.book-actions-li {
+  justify-content: space-around;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .nav-title {
   display: flex;
   width: 50%;
@@ -94,7 +100,7 @@ ul {
 
 .book-category {
   font-weight: bold;
-  color: var(--black-two);
+  color: rgb(126, 126, 126);
 }
 
 tbody {
@@ -114,6 +120,7 @@ tr {
   color: #4386bf;
   margin-top: 0.8rem;
   font-size: 1rem;
+  justify-content: space-around;
 }
 
 .book-actions a {
@@ -142,6 +149,20 @@ tr {
   margin: 0.9rem 0 0 0.5rem;
 }
 
+.progress-number {
+  font-size: 2rem;
+}
+
+.completed-text {
+  font-size: 0.9rem;
+}
+
+.over-all-progress {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+
 .filter-select {
   width: 10%;
   height: 2rem;
@@ -160,6 +181,11 @@ tr {
 .filter-title {
   font-weight: bolder;
   margin-right: 1rem;
+}
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 form {

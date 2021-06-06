@@ -16,9 +16,9 @@ const Book = (props) => {
             <td className="book-title">{book.title}</td>
             <td className="book-author">Michael Hart</td>
             <ul className="book-actions">
-              <li><a>Comments</a></li>
-              <li><button type="button" value={book.id} onClick={remove} className="remove-btn">Remove</button></li>
-              <li><a>Edit</a></li>
+              <li className="book-actions-li"><a>Comments</a></li>
+              <li className="book-actions-li"><button type="button" value={book.id} onClick={remove} className="remove-btn">Remove</button></li>
+              <li className="book-actions-li"><a>Edit</a></li>
             </ul>
           </div>
           <div className="over-all-progress">

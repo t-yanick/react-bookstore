@@ -34,16 +34,7 @@ const BookList = ({ categories }) => {
         <p className="filter-title">Filter</p>
         <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} />
         <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Title</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            {bookFilter().map((book) => <Book key={book.id} book={book} remove={removeHandler} />)}
-          </tbody>
+          {bookFilter().map((book) => <Book key={book.id} book={book} remove={removeHandler} />)}
         </table>
       </div>
     </div>
