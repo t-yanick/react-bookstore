@@ -3,7 +3,7 @@ const CHANGE_FILTER = 'CHANGE_FILTER';
 const filterReducer = (state = 'All', action) => {
   switch (action.type) {
     case CHANGE_FILTER:
-      return action.id;
+      return action.filter;
     default:
       return state;
   }

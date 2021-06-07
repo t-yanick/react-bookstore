@@ -2,11 +2,10 @@
 
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-
-const BookForm = () => {
+const BookForm = ({ categories }) => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
@@ -23,27 +22,39 @@ const BookForm = () => {
     e.preventDefault();
     dispatch(createBook({
       // eslint-disable-next-line
-      id: parseInt(Date.now()),
+      id: Math.floor(Math.random() * 100),
       title,
       category,
     }));
-    setTitle('');
-    setCategory('');
+    setTitle({ value: '' });
+    setCategory({ value: '' });
   };
   return (
-    <form onSubmit={submitHandler}>
-      <input type="text" onChange={titleHandler} value={title.value} />
-      <select name="categories" onChange={categoryHandler} value={category.value}>
-        {categories.map((category) => (
-          <option key={category}>
-            {' '}
-            {category}
-          </option>
-        ))}
-      </select>
-      <button type="button" value="Submit"> Submit</button>
-    </form>
+    <div className="book-form flex space-around">
+      <h3 className="title">ADD A NEW BOOK</h3>
+      <form className="flex" onSubmit={submitHandler}>
+        <input type="text" required onChange={titleHandler} value={title.value} className="add-book" />
+        <select required onChange={categoryHandler} value={category.value} className="category-select">
+          <option value="">Category</option>
+          {categories.map((category) => (
+            <option key={category}>
+              {' '}
+              {category}
+            </option>
+          ))}
+        </select>
+        <button type="submit" className="btn"> Submit</button>
+      </form>
+    </div>
   );
+};
+
+BookForm.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.string),
+};
+
+BookForm.defaultProps = {
+  categories: [],
 };
 
 export default BookForm;

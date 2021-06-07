@@ -18,7 +18,7 @@
 * [Acknowledgements](#acknowledgements)
 
 ## Screenshot
-<!-- ![screenshot](src/assets/screenshot.png) To be added in future milestones--> 
+![screenshot](src/assets/screenshot.png) To be added in future milestones 
 
 ## Live Demo
 
