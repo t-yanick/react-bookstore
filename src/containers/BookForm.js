@@ -30,7 +30,7 @@ const BookForm = ({ categories }) => {
     setCategory({ value: '' });
   };
   return (
-    <div className="book-form flex">
+    <div className="book-form flex space-around">
       <h3 className="title">ADD A NEW BOOK</h3>
       <form className="flex" onSubmit={submitHandler}>
         <input type="text" required onChange={titleHandler} value={title.value} className="add-book" />

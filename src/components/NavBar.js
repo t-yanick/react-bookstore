@@ -5,8 +5,8 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => (
-  <nav className="panel-bg flex">
-    <div className="nav-title flex">
+  <nav className="panel-bg flex space-around">
+    <div className="nav-title flex space-around">
       <h1 className="Bookstore-CMS">Bookstore CMS</h1>
       <a href="#">Books</a>
       <a href="#">Categories</a>

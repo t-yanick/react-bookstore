@@ -13,15 +13,17 @@ ul {
   display: flex;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 ul {
   list-style-type: none;
   width: 60%;
-  justify-content: space-around;
   align-items: center;
 }
 
 .panel-bg {
-  justify-content: space-around;
   width: 99%;
   height: 95px;
   background-color: white;
@@ -30,14 +32,11 @@ ul {
 }
 
 .book-actions-li {
-  justify-content: space-around;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0 5px 0 5px;
 }
 
 .nav-title {
   width: 50%;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -120,7 +119,6 @@ tr {
   color: #4386bf;
   margin-top: 0.8rem;
   font-size: 1rem;
-  justify-content: space-around;
 }
 
 .remove-btn {
@@ -208,7 +206,7 @@ form {
 
 .book-form {
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   height: 5rem;
   width: 100%;

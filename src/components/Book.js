@@ -15,7 +15,7 @@ const Book = (props) => {
             <td className="book-category">{book.category}</td>
             <td className="book-title">{book.title}</td>
             <td className="book-author">Michael Hart</td>
-            <ul className="book-actions flex">
+            <ul className="book-actions flex space-around">
               <li className="book-actions-li"><a>Comments</a></li>
               <li className="book-actions-li"><button type="button" value={book.id} onClick={remove} className="remove-btn">Remove</button></li>
               <li className="book-actions-li"><a>Edit</a></li>
